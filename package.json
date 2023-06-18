@@ -1,0 +1,36 @@
+{
+  "name": "toys-shop-e-commerce",
+  "version": "1.0.0",
+  "description": "<img src=\"/public/assets/screen-shots/home-page.png\" width=\"500\"> <img src=\"/public/assets/screen-shots/media-page.png\" width=\"500\"> <img src=\"/public/assets/screen-shots/review-page.png\" width=\"500\">",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "client": "npm start --prefix client",
+    "server": "nodemon server/server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amirg76/toys-shop-e-commerce.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/amirg76/toys-shop-e-commerce/issues"
+  },
+  "homepage": "https://github.com/amirg76/toys-shop-e-commerce#readme",
+  "dependencies": {
+    "axios": "^1.2.3",
+    "concurrently": "^7.6.0",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.8.3",
+    "nodemon": "^2.0.20",
+    "react-stripe-checkout": "^2.6.3",
+    "stripe": "^11.6.0"
+  }
+}
