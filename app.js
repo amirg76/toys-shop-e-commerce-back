@@ -12,6 +12,10 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+app.get("/",(req,res)=>{
+  res.setHeader("Access-Control-Allow-Credentials","true");
+  res.send("API is running..");
+});
 app.use("/users", userRouter);
 app.use("/auth", authRouter);
 app.use("/products", productRouter);
