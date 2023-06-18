@@ -4,7 +4,7 @@
   "description": "<img src=\"/public/assets/screen-shots/home-page.png\" width=\"500\"> <img src=\"/public/assets/screen-shots/media-page.png\" width=\"500\"> <img src=\"/public/assets/screen-shots/review-page.png\" width=\"500\">",
   "main": "server.js",
   "scripts": {
-    "start": "node server/server.js",
+    "start": "node server.js",
     "client": "npm start --prefix client",
     "server": "nodemon server/server.js",
     "dev": "concurrently \"npm run server\" \"npm run client\""
