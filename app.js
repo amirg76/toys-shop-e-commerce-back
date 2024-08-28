@@ -12,8 +12,8 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.get("/",(req,res)=>{
-  res.setHeader("Access-Control-Allow-Credentials","true");
+app.get("/", (req, res) => {
+  res.setHeader("Access-Control-Allow-Credentials", "true");
   res.send("API is running..");
 });
 app.use("/users", userRouter);
@@ -23,4 +23,7 @@ app.use("/carts", cartRouter);
 app.use("/orders", orderRouter);
 app.use("/likes", likesRouter);
 app.use("/payment", stripeRouter);
+app.use("/test", (req, res) => {
+  res.send("test");
+});
 export { app };
