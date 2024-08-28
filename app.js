@@ -23,7 +23,5 @@ app.use("/carts", cartRouter);
 app.use("/orders", orderRouter);
 app.use("/likes", likesRouter);
 app.use("/payment", stripeRouter);
-app.use("/test", (req, res) => {
-  res.send("test");
-});
+
 export { app };
