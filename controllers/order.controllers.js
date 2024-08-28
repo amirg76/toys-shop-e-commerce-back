@@ -21,7 +21,8 @@ export const createOrder = async (req, res) => {
 export const updateOrder = async (req, res) => {
   try {
     const newOrderUpdate = await updatedOrderInDB(req.params.id, req.body);
-    res.status(200).json(newOrderUpdate);
+    // res.status(200).json(newOrderUpdate);
+    res.status(200).json("Order has been deleted...");
   } catch (error) {
     res.status(500).json(error.message);
   }
