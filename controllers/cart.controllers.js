@@ -21,7 +21,10 @@ export const createCart = async (req, res) => {
 export const updateCart = async (req, res) => {
   try {
     const newCartUpdate = await updatedCartInDB(req.params.id, req.body.arg);
-    res.status(200).json(newCartUpdate);
+
+    console.log(newCartUpdate);
+
+    // res.status(200).json(newCartUpdate);
   } catch (error) {
     res.status(500).json(error.message);
   }
